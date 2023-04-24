@@ -1,0 +1,31 @@
+Create database "mydb" and collection "mycollection" from mongo console
+
+
+Create, display, drop database.
+
+use mydb
+
+show dbs
+
+db.dropDatabase()
+
+show dbs
+
+
+Create collesctions and other operations
+
+db.createCollection("user")
+
+show collections
+
+db.user.drop()
+
+
+
+Insert, display, update, delete
+
+
+db.user.insert({"name"}:"Anthony") 
+db.user.insertMany([{"name":"Amar"},{"name":"Akbar"}])
+db.user.find()
+db.user.remove({})
